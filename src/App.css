@@ -3,7 +3,7 @@
 .page {
   margin: 0;
   font-family: "Mouse Memoirs";
-  background-color: #bde0fe;
+  background-color: #397673;
 }
 
 .header__container {
@@ -35,7 +35,7 @@
 
 .navigation__button {
   font-family: "Mouse Memoirs";
-  background-color: #555;
+  background-color: #5369f8;
   border-radius: 4px;
   font-size: 3vh;
   padding: 10px;
@@ -69,13 +69,13 @@
 
 .character-item {
   flex: 1;
-  border: 3px solid #666;
+  border: 5px solid #5369f8;
   border-radius: 5%;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
   height: 440px;
-  background-color: #ffafcc;
+  background-color: rgb(83, 160, 248);
 }
 
 .character-item__img {
