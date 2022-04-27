@@ -29,6 +29,7 @@ const App : React.FC = () => {
   ]);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [characterFavourites, setCharacterFavourites] = useState<Array<number>>([]);
 
     useEffect(() =>
     {
@@ -52,7 +53,7 @@ const App : React.FC = () => {
     <div className="page">
       <Header currentPage={currentPage} />
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <CharacterContainer characters={characters} />
+      <CharacterContainer characters={characters} characterFavourites={characterFavourites} updateFavourites={setCharacterFavourites} />
     </div>
   );
 }
