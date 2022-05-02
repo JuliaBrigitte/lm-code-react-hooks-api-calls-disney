@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Throughout this guided lab you'll be working with React Hooks 🪝
+Throughout this guided lab you'll be working with React Hooks.
 
 The lab will guide you through updating an existing React application to introduce API calls and [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 

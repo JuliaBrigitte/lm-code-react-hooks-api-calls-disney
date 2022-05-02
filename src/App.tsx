@@ -5,8 +5,9 @@ import CharacterContainer from './components/character_container';
 import Navigation from './components/navigation';
 import { DisneyCharacter } from './disney_character';
 import axios from 'axios';
+import FavouritesInclUpdateContext from "./FavouritesInclUpdateContext";
 
-export const FavouritesContext = React.createContext<number[]>( []);
+//export const FavouritesContext = React.createContext<number[]>( []);
 
 const App : React.FC = () => {
   // Some dummy state representing disney characters
@@ -27,21 +28,22 @@ const App : React.FC = () => {
       imageUrl: "https://static.wikia.nocookie.net/disney/images/1/1e/Profile_-_Ace.png"
     },
   ]);
+  const [allCharacters, setAllCharacters] = useState<Array<DisneyCharacter>>(characters);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [characterFavourites, setCharacterFavourites] = useState<Array<number>>([]);
+  //const [characterFavourites, setCharacterFavourites] = useState<Array<DisneyCharacter>>([]);
 
-    useEffect(() =>
-    {
-        console.log("useEffect triggered");
-        getCharacters(currentPage).then();
-    });
+  useEffect(() =>
+  {
+    getCharacters(currentPage)
+  }, [currentPage]);
 
    const getCharacters = async (pageNumber : number) => {
      try
      {
        const response = await axios.get('https://api.disneyapi.dev/characters?page=' + pageNumber);
        setCharacters(response.data.data);
+       setAllCharacters(response.data.data);
      }
      catch(error)
      {
@@ -50,13 +52,17 @@ const App : React.FC = () => {
    }
 
   return (
-      <FavouritesContext.Provider value={characterFavourites}>
+      // <FavouritesContext.Provider value={characterFavourites}>
+      <FavouritesInclUpdateContext>
         <div className="page">
           <Header currentPage={currentPage} />
-          <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-          <CharacterContainer characters={characters} updateFavourites={setCharacterFavourites}  />
+          <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} characters={characters} setCharacters={setCharacters} allCharacters={allCharacters}/>
+          <CharacterContainer characters={characters}  />
+          {/*<CharacterContainer characters={characters} updateFavourites={setCharacterFavourites}  />*/}
         </div>
-      </FavouritesContext.Provider>
+      </FavouritesInclUpdateContext>
+      // </FavouritesContext.Provider>
+
   );
 
 }
