@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/css/main.61af15d5.chunk.css",
-    "main.js": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/main.8e59b7ac.chunk.js",
-    "main.js.map": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/main.8e59b7ac.chunk.js.map",
-    "runtime-main.js": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/runtime-main.56b05229.js",
-    "runtime-main.js.map": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/runtime-main.56b05229.js.map",
-    "static/js/2.24dcadd5.chunk.js": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/2.24dcadd5.chunk.js",
-    "static/js/2.24dcadd5.chunk.js.map": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/2.24dcadd5.chunk.js.map",
-    "static/js/3.529f5a83.chunk.js": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/3.529f5a83.chunk.js",
-    "static/js/3.529f5a83.chunk.js.map": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/3.529f5a83.chunk.js.map",
-    "index.html": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/index.html",
-    "static/css/main.61af15d5.chunk.css.map": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/css/main.61af15d5.chunk.css.map",
-    "static/js/2.24dcadd5.chunk.js.LICENSE.txt": "//juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/static/js/2.24dcadd5.chunk.js.LICENSE.txt"
+    "main.css": "/lm-code-react-hooks-api-calls-disney/static/css/main.61af15d5.chunk.css",
+    "main.js": "/lm-code-react-hooks-api-calls-disney/static/js/main.8e59b7ac.chunk.js",
+    "main.js.map": "/lm-code-react-hooks-api-calls-disney/static/js/main.8e59b7ac.chunk.js.map",
+    "runtime-main.js": "/lm-code-react-hooks-api-calls-disney/static/js/runtime-main.82f5d34b.js",
+    "runtime-main.js.map": "/lm-code-react-hooks-api-calls-disney/static/js/runtime-main.82f5d34b.js.map",
+    "static/js/2.24dcadd5.chunk.js": "/lm-code-react-hooks-api-calls-disney/static/js/2.24dcadd5.chunk.js",
+    "static/js/2.24dcadd5.chunk.js.map": "/lm-code-react-hooks-api-calls-disney/static/js/2.24dcadd5.chunk.js.map",
+    "static/js/3.529f5a83.chunk.js": "/lm-code-react-hooks-api-calls-disney/static/js/3.529f5a83.chunk.js",
+    "static/js/3.529f5a83.chunk.js.map": "/lm-code-react-hooks-api-calls-disney/static/js/3.529f5a83.chunk.js.map",
+    "index.html": "/lm-code-react-hooks-api-calls-disney/index.html",
+    "static/css/main.61af15d5.chunk.css.map": "/lm-code-react-hooks-api-calls-disney/static/css/main.61af15d5.chunk.css.map",
+    "static/js/2.24dcadd5.chunk.js.LICENSE.txt": "/lm-code-react-hooks-api-calls-disney/static/js/2.24dcadd5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.56b05229.js",
+    "static/js/runtime-main.82f5d34b.js",
     "static/js/2.24dcadd5.chunk.js",
     "static/css/main.61af15d5.chunk.css",
     "static/js/main.8e59b7ac.chunk.js"
