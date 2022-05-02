@@ -1,7 +1,7 @@
 {
   "name": "learner-materials-api-calls-and-hooks",
   "version": "0.1.0",
-  "homepage": "https://https://juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/",
+  "homepage": "https://juliabrigitte.github.io/lm-code-react-hooks-api-calls-disney/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
