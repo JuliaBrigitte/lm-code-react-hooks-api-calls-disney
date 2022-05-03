@@ -1,10 +1,11 @@
 
 // our props have two properties - a number, and a function that takes a number and returns void
 // we can define this as an interface, or anonymously like this:
-import {useState} from "react";
+import React, {useState} from "react";
 import {useFavourites} from "../FavouritesInclUpdateContext";
 import {DisneyCharacter} from "../disney_character";
 import character from "./character";
+import Header from "./header";
 
 const Navigation : React.FC<{ currentPage: number, setCurrentPage: (page: number) => void, characters: Array<DisneyCharacter>, setCharacters: (characters: Array<DisneyCharacter>) => void, allCharacters: Array<DisneyCharacter>
 }>
@@ -33,30 +34,38 @@ const Navigation : React.FC<{ currentPage: number, setCurrentPage: (page: number
         if (showFavourites)
         {
             setCharacters(favourites);
-            setCurrentPage(1);
+            //setCurrentPage(1);
         }
         else
         {
             setCharacters(allCharacters);
         }
         setShowFavourites(!showFavourites);
-
     }
 
     return (
-        <div className="navigation">
+        <div>
             {showFavourites?
-            <div className="navigation__item">
-                <button className="navigation__button" onClick={prevPage}>Prev Page</button>
-            </div>:""}
-            <div className="navigation__item">
-                <button className="navigation__button" onClick={toggleFavouritesOrAll}>{(showFavourites ? "Show Favourites" : "All Characters")}</button>
+                <Header currentPage={currentPage} />
+                :
+                <header className="header__container">
+                    <h1 className="header__title">The World of Disney</h1>
+                </header>}
+            <div className="navigation">
+                {showFavourites?
+                    <div className="navigation__item">
+                        <button className="navigation__button" onClick={prevPage}>Prev Page</button>
+                    </div>:""}
+                <div className="navigation__item">
+                    <button className="navigation__button" onClick={toggleFavouritesOrAll}>{(showFavourites ? "Show Favourites" : "All Characters")}</button>
+                </div>
+                {showFavourites?
+                    <div className="navigation__item">
+                        <button className="navigation__button" onClick={nextPage}>Next Page</button>
+                    </div>:""}
             </div>
-            {showFavourites?
-            <div className="navigation__item">
-                <button className="navigation__button" onClick={nextPage}>Next Page</button>
-            </div>:""}
         </div>
+
 
     )
 }

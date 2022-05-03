@@ -55,7 +55,6 @@ const App : React.FC = () => {
       // <FavouritesContext.Provider value={characterFavourites}>
       <FavouritesInclUpdateContext>
         <div className="page">
-          <Header currentPage={currentPage} />
           <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} characters={characters} setCharacters={setCharacters} allCharacters={allCharacters}/>
           <CharacterContainer characters={characters}  />
           {/*<CharacterContainer characters={characters} updateFavourites={setCharacterFavourites}  />*/}
